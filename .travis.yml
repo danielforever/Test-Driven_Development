@@ -21,7 +21,7 @@ matrix:
       env: COMPILER=g++-5
 
 before_install:
-  - pip3.6 install --user cpp-coveralls
+  - pip3.6.3 install --user cpp-coveralls
 install:
   - sudo apt-get install -y -qq lcov
 script:
