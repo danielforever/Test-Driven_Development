@@ -4,7 +4,7 @@ https://drive.google.com/file/d/1MeQuLjsB8RfATyr2Ad50IrfAGODJQ3aA/view?usp=shari
 
 # PID fomula
 
-![alt text](https://github.com/danielforever/Test-Driven_Development_Pair2/blob/PID_fomula.jpg?raw=true)
+![alt text](https://github.com/danielforever/Test-Driven_Development_Pair2/blob/master/PID_fomula.jpg?raw=true)
 
 Above is the fomula that needed for this implementation
 
