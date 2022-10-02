@@ -2,7 +2,7 @@
 #include <lib.hpp>
 
 
-double PID::compute(double Vt,double Va) {  
+double PID::compute(double SetPoint,double Va) {  
   return 0.0; 
 }
 
