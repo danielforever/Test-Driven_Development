@@ -12,7 +12,7 @@ class PID {
     	* @Param Kp proportional value
     	* @Param Kd derivative value
     	* @Param Ki integral value
-    	* @Param Errors value
+    	* @Param Errors numbers of vector
     	* @Param dt the step over time for 
     	*           every loop.
     	*/   
