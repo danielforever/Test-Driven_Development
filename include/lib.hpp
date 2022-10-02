@@ -41,6 +41,7 @@ class PID {
     	* @Param Va Actually velocity
 	* Implement this formula:
 	* Kp*e + Kd* de/dt + Ki*sum(e)
+	* Output will be the PID control variable
     	*/
     	double compute(double SetPoint,double Va);
       
