@@ -19,15 +19,20 @@ double PID::compute(double SetPoint,double Va) {
   // calculating the error
   double error = SetPoint - Va;
 
+  // pushing error to vector list;
   Errors.push_back(error*dt);
 
   double Pout = kp * error;
-  double sum = accumulate(Errors.begin(), Errors.end(),0);
-  
-  double 
 
-  return PID->compute(SetPoint,Va)
+
+  double sum = accumulate(Errors.begin(), Errors.end(),0);
+  double Iout = Ki * sum;
+
   
-  
-  return 0.0; 
+  double perror = Errors[ Errors.size() - 1];
+  double Dout = Kd * (error - perror)/dt;
+
+  double Output = Pout + Iout + Dout;
+   
+  return Output; 
 }
