@@ -1,15 +1,16 @@
-## Test-Driven Development
+# Test-Driven Development
 
 
-# Below is the class diagram for our PID controller
+
+## Below is the class diagram for our PID controller
 
 ![alt text](https://github.com/danielforever/Test-Driven_Development_Pair2/blob/master/images/class_diagram.jpg?raw=true)
 
-# Below is the activity diagram for our PID controller
+## Below is the activity diagram for our PID controller
 
 ![alt text](https://github.com/danielforever/Test-Driven_Development_Pair2/blob/master/images/Activity_diagram.jpg?raw=true)
 
-# PID fomula
+## PID fomula
 
 ![alt text](https://github.com/danielforever/Test-Driven_Development_Pair2/blob/master/images/PID_fomula.jpg?raw=true)
 
@@ -27,11 +28,11 @@ de	=	change in error value
 
 dt	=	change in time
 
-# This is the pair-programming roles
+## This is the pair-programming roles
 
 ![alt text](https://github.com/danielforever/Test-Driven_Development_Pair2/blob/master/images/pair_role.jpg?raw=true)
 
-# Build file
+## Build file
 
 mkdir build && cd build
 
@@ -40,7 +41,7 @@ cmake ..
 make
 
 
-# Run test
+## Run test
 
 cd build/test
 
