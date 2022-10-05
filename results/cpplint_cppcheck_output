@@ -1,0 +1,20 @@
+silver@silver:~/Documents/git/Test-Driven_Development_Pair2$ cppcheck --enable=all --language=c++ --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name \*.hpp -or -name *.cpp | grep -vE -e "^./build/" -e "^./vendor/" )
+Checking app/main.cpp ...
+1/5 files checked 7% done
+Checking app/pid.cpp ...
+2/5 files checked 39% done
+Checking include/pid.hpp ...
+3/5 files checked 71% done
+Checking test/main.cpp ...
+4/5 files checked 80% done
+Checking test/test.cpp ...
+5/5 files checked 100% done
+
+
+silver@silver:~/Documents/git/Test-Driven_Development_Pair2$ cpplint $(find . -name \*.hpp -or -name \*.cpp | grep -vE -e "^./build/" -e"^./vendor/")
+Done processing ./app/main.cpp
+Done processing ./app/pid.cpp
+Done processing ./include/pid.hpp
+Done processing ./test/main.cpp
+Done processing ./test/test.cpp
+
