@@ -10,7 +10,7 @@
  */
 
 #include <bits/stdc++.h>  // importing stl
-#include <pid.hpp>
+#include "./pid.hpp"
 
 double PID::compute(double SetPoint, double Va) {
   // calculating the error

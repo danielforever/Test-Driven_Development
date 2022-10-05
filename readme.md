@@ -1,7 +1,6 @@
 # Test-Driven Development
 
-###Part 2
-##Authors
+## Part 2 Authors
 Driver: Abhinav
 Navigator: Chang 
 
@@ -50,3 +49,12 @@ cd build/test
 
 ./cpp-test
 
+# To do list :
+
+1. We have to replace EXPECT_EQ with EXPECT_DOUBLE_EQ since we were facing problems with precision as the test case was not satisfied even if the result and expected result was "26.11001" and "26.1100100001"
+
+2. For the third test case in case 3 we had to replace EXPECT_EQ with EXPECT_NEAR since we were facing the same issue of precision.
+
+# Additional Test
+
+1. EXPECT_DOUBLE_EQ(pid.compute(75.0,0.1),7.5); // to verify the function if error is large.

@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - coverage.info.cleaned - /home/silver/Documents/git/Test-Driven_Development_Pair2/include/pid.hpp</title>
+  <link rel="stylesheet" type="text/css" href="../../../../../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../../../../../index.html">top level</a> - <a href="index.html">home/silver/Documents/git/Test-Driven_Development_Pair2/include</a> - pid.hpp<span style="font-size: 80%;"> (source / <a href="pid.hpp.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">coverage.info.cleaned</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2022-10-05 16:54:24</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr><td><img src="../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : /**</a>
+<span class="lineNum">       2 </span>            :  * @file pid.hpp
+<span class="lineNum">       3 </span>            :  * @author Po-Yu and Pavan
+<span class="lineNum">       4 </span>            :  * @brief 
+<span class="lineNum">       5 </span>            :  * @version 0.1
+<span class="lineNum">       6 </span>            :  * @date 2022-10-05
+<span class="lineNum">       7 </span>            :  * 
+<span class="lineNum">       8 </span>            :  * @copyright Copyright (c) 2022
+<span class="lineNum">       9 </span>            :  * 
+<span class="lineNum">      10 </span>            :  */
+<span class="lineNum">      11 </span>            : 
+<span class="lineNum">      12 </span>            : #pragma once
+<span class="lineNum">      13 </span>            : 
+<span class="lineNum">      14 </span>            : #include &lt;iostream&gt;
+<span class="lineNum">      15 </span>            : #include &lt;vector&gt;
+<span class="lineNum">      16 </span>            : 
+<span class="lineNum">      17 </span>            : class PID {
+<span class="lineNum">      18 </span>            :  private:
+<span class="lineNum">      19 </span>            :   /**
+<span class="lineNum">      20 </span>            :    * @Brief
+<span class="lineNum">      21 </span>            :    *
+<span class="lineNum">      22 </span>            :    * @Param Kp proportional value
+<span class="lineNum">      23 </span>            :    * @Param Kd derivative value
+<span class="lineNum">      24 </span>            :    * @Param Ki integral value
+<span class="lineNum">      25 </span>            :    * @Param Errors numbers of vector
+<span class="lineNum">      26 </span>            :    * @Param dt the step over time for
+<span class="lineNum">      27 </span>            :    *           every loop.
+<span class="lineNum">      28 </span>            :    */
+<span class="lineNum">      29 </span>            : 
+<span class="lineNum">      30 </span>            :   double Kp = 0.1;
+<span class="lineNum">      31 </span>            :   double Kd = 0.01;
+<span class="lineNum">      32 </span>            :   double Ki = 0.001;
+<span class="lineNum">      33 </span>            :   std::vector&lt;double&gt; Errors;
+<span class="lineNum">      34 </span>            :   double dt = 0.001;
+<span class="lineNum">      35 </span>            : 
+<span class="lineNum">      36 </span>            :  public:
+<span class="lineNum">      37 </span>            :   /**
+<span class="lineNum">      38 </span>            :    * @Brief  Constructor
+<a name="39"><span class="lineNum">      39 </span>            :    *</a>
+<span class="lineNum">      40 </span>            :    */
+<span class="lineNum">      41 </span><span class="lineCov">          3 :   PID() {}</span>
+<span class="lineNum">      42 </span>            :   /**
+<span class="lineNum">      43 </span>            :    * @Brief  Distructor
+<a name="44"><span class="lineNum">      44 </span>            :    *</a>
+<span class="lineNum">      45 </span>            :    */
+<span class="lineNum">      46 </span><span class="lineCov">          3 :   ~PID() {}</span>
+<span class="lineNum">      47 </span>            :   /**
+<span class="lineNum">      48 </span>            :    * @Brief  compute function
+<span class="lineNum">      49 </span>            :    * @Param SetPoint setpoint for the PID controller
+<span class="lineNum">      50 </span>            :    * @Param Va Actually velocity
+<span class="lineNum">      51 </span>            :    * Implement this formula:
+<span class="lineNum">      52 </span>            :    * Kp*e + Kd* de/dt + Ki*sum(e)
+<span class="lineNum">      53 </span>            :    * Output will be the PID control variable
+<span class="lineNum">      54 </span>            :    */
+<span class="lineNum">      55 </span>            :   double compute(double SetPoint, double Va);
+<span class="lineNum">      56 </span>            : };
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>
